@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+*{
+    margin:0;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    justify-items: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.links a{
+    margin-left:1vw;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 98vw;
+    background-color: #F3F8FF;
+    padding: 1vw;
+}
+nav :hover{
+    color: #B31312;
+}
+#pagetitle{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+}
+.links{
+    text-decoration: none;
+   padding-top: 3px;
+}
+video{
+    height: 100vh;
+    width: 100vw; 
+    object-fit: cover;
+    position: fixed;   
+    z-index: -1;
+}
+.text{
+    font-size: 30px;
+    color: white; 
+    
+}
+article{
+    text-align: center;
+    margin-top: 45vh;
+    font-family: Rubik+Doodle+Shadow;
+}
+/* base sprite css*/
+.icon{
+    background: url(sprite3.png) no-repeat -141px -221px;
+	width: 66px;
+	height: 66px;
+    display: inline-block;
+}
+/*individual sprite positions*/
+#instagram{
+    background: url(sprite3.png) no-repeat -290px -221px;
+	width: 66px;
+	height: 66px;
+}
+#fb{
+    background: url(sprite3.png) no-repeat -439px -146px;
+	width: 66px;
+	height: 66px;
+}
+#youtube{
+    background: url(sprite3.png) no-repeat -439px -221px;
+	width: 66px;
+	height: 66px;
+}
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom: 0vw;
+    width: 100vw;
+}
+/** 720 landscape screen **/
+@media screen and (max-width: 720px){
+    nav{
+        background-color: #E0F4FF;
+    }
+}
+/** square tablets **/
+@media screen and (max-width: 640px){
+    nav{
+        background-color: #9AD0C2;
+    }
+}
+/** some tablets **/
+/* code for site responsiveness*/
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+        background-color: white;
+     }
+    .pagetitle{
+        background-color:#9AD0C2;
+        padding: 1vw;
+        color: black;
+        transition:.5s;
+    }
+    .links{
+         display: none;
+         position: absolute;
+         min-width: 100vw;
+         box-shadow: 0px 8px 16px 0px #B0A695;
+         z-index: 1;
+         background-color: #427D9D;
+    }
+    .links a{
+        color: rgb(240, 237, 237);
+        display: block;
+        transition: .5s;
+        margin-left:0;
+        padding-left: 1vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    
+    }
+    .links a:hover{
+        background-color:#164863;
+        transition: .5s;
+    }
+    nav:hover .links{
+       display: block;
+       transition: .5s;
+    }
+    nav:hover .pagetitle{background-color: blanchedalmond; transition: .5s;
+       }
+}
+
+@media screen and (max-width: 480px){
+    nav{
+        background-color: #9AD0C2;
+    }
+    }
